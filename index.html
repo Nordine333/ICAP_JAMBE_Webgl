@@ -14,7 +14,7 @@
     if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
       // Code pour charger l'application WebGL 1
       var script = document.createElement("script");
-      script.src = "Chemin/Vers/Votre/ApplicationWebGL1.js";
+      script.src = "ICAP_JAMBE_Webgl/Build/buildWEBGL4.loader.js";
       container.appendChild(script);
     } else {
       // Code pour charger l'application WebGL 2
@@ -25,7 +25,7 @@
       container.appendChild(canvas);
 
       var script = document.createElement("script");
-      script.src = "Chemin/Vers/Votre/ApplicationWebGL2.js";
+      script.src = "ICAP_JAMBE_Webgl/Build/buildWEBGL4.loader.js";
       script.onload = function() {
         // Initialiser et charger l'instance Unity pour WebGL 2
         var config = {
